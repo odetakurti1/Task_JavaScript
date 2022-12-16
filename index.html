@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task JavaScript</title>
+  </head>
+  <script async src="index.js"></script>
+  <body>
+    <div class="container">
+      <form id="form">
+        <input
+          class="classValue"
+          type="text"
+          placeholder="Emri"
+          value=""
+          id="name"
+          required
+          />
+        <p id="errorMessage" class="errorMessage top-arrow"></p>
+        <select id="role" class="roleValue">
+          <option selected>Student</option>
+          <option>Mesues</option>
+        </select>
+        <button class="btn" type="submit">+ Shto</button>
+      </form>
+      <hr/>
+
+        <input type="text" id="filter" placeholder="Kerko" class="classValue"
+          />
+        <ul id="values-list" class="list">
+        </ul>
+      </div>
+    </body>
+  </html>

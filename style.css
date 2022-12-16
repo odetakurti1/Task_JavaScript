@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+body {
+  background: rgb(94, 167, 216);
+}
+body::after {
+  content: "VEED.IO";
+  color: white;
+  position: absolute;
+  right: 10px;
+  font-size: 60px;
+  top: 20px;
+  font-weight: 900;
+}
+.container {
+  width: 800px;
+  height: 100vh;
+  background: white;
+  margin: auto;
+  padding: 30px 25px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 4px 9px;
+  border-radius: 5px;
+  height: auto;
+  box-shadow: 1px 2px 5px rgb(0 0 1 / 35%);
+  margin: 20px 0;
+}
+.list {
+  overflow-y: scroll;
+  display: block;
+  height: 86%;
+  margin-top: 20px;
+}
+.wrap__details {
+  width: 100%;
+}
+.deleteTask {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgb(214, 45, 45);
+  color: #ffffff;
+  outline: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border-color: transparent;
+  position: relative;
+}
+
+.deleteTask:before,
+.deleteTask:after {
+  position: absolute;
+  left: 7px;
+  top: 3.5px;
+  content: "";
+  height: 14px;
+  width: 5px;
+  background-color: white;
+}
+.deleteTask:before {
+  transform: rotate(45deg);
+}
+.deleteTask:after {
+  transform: rotate(-45deg);
+}
+.pName {
+  font-weight: 500;
+}
+.pRole {
+  font-weight: 600;
+}
+
+.classValue {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 2px;
+  border: 1px solid black;
+  padding: 6px;
+}
+
+.roleValue {
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 2px;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: white;
+}
+.btn {
+  background: #1d77ca;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline-style: none;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 5px;
+}
+
+.wrapper img {
+  float: left;
+  height: 30px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 1px black;
+  margin-right: 5px;
+}
+
+.errorMessage {
+  background-color: white;
+  width: 143px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 107px;
+  border-radius: 10px;
+  float: left;
+  display: none;
+  position: absolute;
+}
+.errorMessage.top-arrow:after {
+  content: " ";
+  position: absolute;
+  right: 90px;
+  top: -15px;
+  border-top: none;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 15px solid white;
+}
+
+.hide {
+  display: none;
+}
+
+hr {
+  width: 100%;
+  margin: 30px 0;
+  display: block;
+  position: relative;
+  background: #beb8b8;
+  border: 0;
+  height: 1px;
+}
